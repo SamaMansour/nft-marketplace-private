@@ -5,6 +5,7 @@
   left: 0px;
   top: 0px;
 }
+
 #base {
   position: absolute;
   width: 1920px;
@@ -13,6 +14,7 @@
   top: 0px;
   background: #FFFFFF;
 }
+
 #logo {
   position: absolute;
   width: 186.07px;
@@ -20,6 +22,7 @@
   left: 160.96px;
   top: 25px;
 }
+
 #navigation {
   display: flex;
   flex-direction: row;
@@ -33,6 +36,7 @@
   top: 35.51%;
   bottom: 38.32%;
 }
+
 #menu {
   /* Navigation */
   /* Auto layout */
@@ -145,6 +149,7 @@
   order: 0;
   flex-grow: 0;
 }
+
 #connect-wallet {
   /* Button */
   /* Auto layout */
@@ -179,6 +184,7 @@
   order: 0;
   flex-grow: 0;
 }
+
 #call-to-action {
   display: flex;
   flex-direction: row;

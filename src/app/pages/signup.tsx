@@ -14,6 +14,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import LogoTitle from "../assets/images/LogoTitle.png"
 import Title from "../assets/images/Title.png"
+import '../styles/signup.scss'
 
 
 
@@ -61,17 +62,18 @@ export default function SignUp() {
           <Grid item xs={12} sm={6}>
           <img src={LogoTitle} />
           </Grid>
+          <p className='subtitle'>Connect with one of your avalible wallet providers</p>
           </Grid>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
               <Grid item xs={12}>
-                <TextField
+                <label className='input-label'>First Name</label>
+                <input
                   required
-                  fullWidth
-                  id="lastName"
-                  label="Last Name"
-                  name="lastName"
+                  id="firstName"
+                  name="firstName"
                   autoComplete="family-name"
+                  className='input'
                 />
               </Grid>
               <Grid item xs={12}>
