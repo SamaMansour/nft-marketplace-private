@@ -4,13 +4,28 @@ import './App.css';
 import Header from './app/components/Header/Header';
 import Footer from './app/components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 
+import Layout from "./app/components/Layout/Layout";
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
+    <>
     <div className="App">
-      <Header/>
+      <Layout/>
     </div>
+
+{/* <BrowserRouter>
+<Routes>
+  <Route path='/' element={}/>
+  <Route path='/detail/:movieId' element={}/>
+  <Route path='/popular' element={}/>
+
+</Routes>
+</BrowserRouter> */}
+</>
   );
 }
 

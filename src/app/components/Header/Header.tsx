@@ -1,6 +1,6 @@
 import react from "react";
 import { Link } from "react-router-dom";
-import '../../styles/Header.css'
+import './Header.scss'
 import Logo from "../../assets/images/Logo.png"
 import SwitchButton from '../../components/Switch/Switch';
 
@@ -10,11 +10,11 @@ const Header = () => {
         <div id="header">
         <Link to='/' id='logo'><img src={Logo} /></Link>
         <div id="navigation">
-          <a className="link" href="#">Home</a>
-          <a className="link" href="#">Marketplace</a>
-          <a className="link" href="#">Community</a>
-          <a className="link" href="#">Activity</a>
-          <a className="link" href="#">Blog</a>
+          <a className="link" >Home</a>
+          <a className="link" >Marketplace</a>
+          <a className="link" >Community</a>
+          <a className="link" >Activity</a>
+          <a className="link" >Blog</a>
         </div>
         <div id="call-to-action">
           <SwitchButton/>
