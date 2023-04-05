@@ -113,8 +113,7 @@ const Footer = () => {
       <div className="copyright">
         <p> ©2022 Larcible. All Right reserved</p>
         
-          <p style={{ marginRight:"16px"}}>Privacy Policy</p>
-          <p>Terms of Service</p>
+          <p>Privacy Policy &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Terms of Service</p>
       </div>  
     </footer>
   );
