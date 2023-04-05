@@ -1,59 +1,57 @@
 import React from "react";
-
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import "./Footer.scss";
-
+import LogoInfo from "../../assets/images/LogoInfo.png"
 import { Link } from "react-router-dom";
+import Join from "../../assets/svg/join-our-community.svg"
+import BackToTop from "../../assets/svg/Back To Top.svg"
 
-const MY__ACCOUNT = [
+const Support = [
   {
-    display: "Author Profile",
+    display: "Community",
     url: "/seller-profile",
   },
   {
-    display: "Create Item",
+    display: "Guidline",
     url: "/create",
   },
   {
-    display: "Collection",
+    display: "Chat With us",
     url: "/market",
   },
-  {
-    display: "Edit Profile",
-    url: "/edit-profile",
-  },
+ 
 ];
 
-const RESOURCES = [
-  {
-    display: "Help Center",
-    url: "#",
-  },
-  {
-    display: "Partner",
-    url: "#",
-  },
-  {
-    display: "Community",
-    url: "#",
-  },
-  {
-    display: "Activity",
-    url: "#",
-  },
-];
-
-const COMPANY = [
+const Company = [
   {
     display: "About",
     url: "#",
   },
   {
-    display: "Career",
+    display: "FAQ",
     url: "#",
   },
   {
-    display: "Ranking",
+    display: "Marketplace",
+    url: "#",
+  },
+  {
+    display: "Blog",
+    url: "#",
+  },
+];
+
+const Explore = [
+  {
+    display: "Art",
+    url: "#",
+  },
+  {
+    display: "Collection",
+    url: "#",
+  },
+  {
+    display: "Creator/Owner",
     url: "#",
   },
   {
@@ -65,98 +63,59 @@ const COMPANY = [
 const Footer = () => {
   return (
     <footer className="footer">
-      <Container>
-        <Row>
-          <Col lg="3" md="6" sm="6" className="mb-4">
-            <div className="logo">
-              <h2 className=" d-flex gap-2 align-items-center ">
-                <span>
-                  <i className="ri-fire-fill"></i>
-                </span>
-                NFTs
-              </h2>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate, quod repellat! Quis quos dolorum tenetur fuga?
-                Aspernatur rerum quae amet.
-              </p>
-            </div>
-          </Col>
-
-          <Col lg="2" md="3" sm="6" className="mb-4">
-            <h5>My Account</h5>
+      <div className="join-container">
+        <div>
+          <img src= {Join}/>
+        </div>
+        <div>
+          <p className="subtext"> Meet the Known Origin team, artists and collectors for platform updates, announcements, and more...</p>
+        </div>
+        <div>
+          <form>
+              <input className= "input-search" type='text'/>
+              <button className="btn-search" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div className="logo-info">
+        <img src={LogoInfo}/>
+      </div>
+      <div className="item-lists">
+      <h5>Support</h5>
             <ListGroup className="list__group">
-              {MY__ACCOUNT.map((item, index) => (
+              {Support.map((item, index) => (
                 <ListGroupItem key={index} className="list__item">
                   <Link to={item.url}> {item.display} </Link>
                 </ListGroupItem>
               ))}
             </ListGroup>
-          </Col>
-
-          <Col lg="2" md="3" sm="6" className="mb-4">
-            <h5>Resources</h5>
+      </div>
+      <div className="item-lists" style={{marginLeft:'238px'}}>
+      <h5>Company</h5>
             <ListGroup className="list__group">
-              {RESOURCES.map((item, index) => (
+              {Company.map((item, index) => (
                 <ListGroupItem key={index} className="list__item">
                   <Link to={item.url}> {item.display} </Link>
                 </ListGroupItem>
               ))}
             </ListGroup>
-          </Col>
-
-          <Col lg="2" md="3" sm="6" className="mb-4">
-            <h5>Company</h5>
+      </div>
+      <div className="item-lists" style={{marginLeft:'549px'}}>
+      <h5>Explore</h5>
             <ListGroup className="list__group">
-              {COMPANY.map((item, index) => (
+              {Explore.map((item, index) => (
                 <ListGroupItem key={index} className="list__item">
                   <Link to={item.url}> {item.display} </Link>
                 </ListGroupItem>
               ))}
             </ListGroup>
-          </Col>
-
-          <Col lg="3" md="6" sm="6" className="mb-4">
-            <h5>Newsletter</h5>
-            <input type="text" className="newsletter" placeholder="Email" />
-            <div className="social__links d-flex gap-3 align-items-center ">
-              <span>
-                <Link to="#">
-                  <i className="ri-facebook-line"></i>
-                </Link>
-              </span>
-              <span>
-                <Link to="#">
-                  <i className="ri-instagram-line"></i>
-                </Link>
-              </span>
-              <span>
-                <Link to="#">
-                  <i className="ri-twitter-line"></i>
-                </Link>
-              </span>
-              <span>
-                <Link to="#">
-                  <i className="ri-telegram-line"></i>
-                </Link>
-              </span>
-              <span>
-                <Link to="#">
-                  <i className="ri-discord-line"></i>
-                </Link>
-              </span>
-            </div>
-          </Col>
-
-          <Col lg="12" className=" mt-4 text-center">
-            <p className="copyright">
-              {" "}
-              Copyrights 2022, Developed by Muhibur Rahman. @Muhib's Tech Diary
-              All Rights Reserved.{" "}
-            </p>
-          </Col>
-        </Row>
-      </Container>
+      </div>
+      <div className="copyright">
+        <p> ©2022 Larcible. All Right reserved</p>
+        
+          <p style={{ marginRight:"16px"}}>Privacy Policy</p>
+          <p>Terms of Service</p>
+      </div>  
     </footer>
   );
 };
