@@ -19,8 +19,7 @@ export default function SignUp() {
   const [ firstName, setFirstName] = useState(null);
   const [ email, setEmail] = useState(null);
   const [ password, setPassword] = useState(null);
-
-
+  
   return (
       <div className='signup'>
       <div>
@@ -66,9 +65,8 @@ export default function SignUp() {
             <button className="btn" type="submit" >
              Create An Account
             </button>
-            <Link href="#" variant="body2">
-                  Already have an account? Sign in
-            </Link>
+           
+            <p>Already have an account?  <Link href="#" variant="body2">Sign in</Link></p>
           </form>
         </div>
       </div>

@@ -3,7 +3,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
 import LogoTitle from "../assets/images/LogoTitle.png"
-import Title from "../assets/images/Title.png"
+import LoginTitle from "../assets/images/LoginTitle.png"
 import '../styles/login.scss'
 import Loginwith from '../assets/svg/Login-with.svg'
 import Google  from '../assets/svg/Google.svg'
@@ -24,7 +24,7 @@ export default function Login() {
   return (
       <div className='signup'>
       <div>
-        <img src={Title}/>
+        <img src={LoginTitle}/>
         <img  style={{marginLeft:'8px', marginBottom: '5px'}}src={LogoTitle}/>
         <p className='subtitle'>Connect with one of your avalible wallet providers</p>
         <img style={{ marginTop:'32px'}} src={Loginwith}/>
