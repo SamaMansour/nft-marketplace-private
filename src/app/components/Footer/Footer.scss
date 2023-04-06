@@ -127,36 +127,31 @@
 	flex-grow: 0;
 }
 
-.input-search{
+.input-subscribe{
 	box-sizing: border-box;
-	display: flex;
 	flex-direction: row;
 	align-items: center;
 	padding: 10px 16px;
-	position: relative;
-	left: 0%;
-	right: 10.11%;
-	top: 0%;
-	bottom: 0%;
 	background: #060707;
 	border: 1px solid #CED4DA;
 	border-radius: 8px;
+	color: #fff
 }
 
-.btn-search{
-	display: flex;
+.btn-subscribe{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	padding: 12px 16px;
 	gap: 8px;
-	position: relative;
-	left: 68.54%;
+	background: #2571EA;
+	border-radius: 8px;
+	magin-bottom: 46px;
+	position: absolute;
 	right: 0%;
 	top: 0%;
 	bottom: 0%;
-	background: #2571EA;
-	border-radius: 8px;
+	margin-right: 46px;
 }
 .row {
 	margin-top: 94px;

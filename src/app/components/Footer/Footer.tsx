@@ -70,12 +70,10 @@ const Footer = () => {
         <div>
           <p className="subtext"> Meet the Known Origin team, artists and collectors for platform updates, announcements, and more...</p>
         </div>
-        <div>
           <form>
-              <input className= "input-search" type='text'/>
-              <button className="btn-search" type="submit">Subscribe</button>
+              <input className= "input-subscribe" type='email' placeholder='Email'/>
+              <button className="btn-subscribe" type="submit">Subscribe</button>
           </form>
-        </div>
       </div>
       <div className="logo-info">
         <img src={LogoInfo}/>

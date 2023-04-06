@@ -40,6 +40,7 @@ export default function SignUp() {
         <div className='input-control'>
           <form onSubmit= {() => signUp({ variables: { firstName, email, password } })
           .then(()=> console.log("sent")).catch((error)=> console.log(error))}>
+
             <div className='input-layout'>
               <label> First Name</label>
                 <input className="input"
@@ -76,7 +77,7 @@ export default function SignUp() {
              Create An Account
             </button>
            
-            <p>Already have an account?  <Link href="#" variant="body2">Sign in</Link></p>
+            <p>Already have an account?  <Link href="/login" variant="body2">Sign in</Link></p>
           </form>
         </div>
       </div>
