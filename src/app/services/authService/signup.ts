@@ -1,9 +1,9 @@
 import { useLazyQuery, gql } from '@apollo/client';
 
 export const REGISTER_MUTATION = gql`
-mutation Register($username: String!, $firstName: String!, $email: String!, $password: String!){
+mutation Register($firstName: String!, $email: String!, $password: String!){
   register(registerUserInput:{
-    username: $username,
+    username: $firstName,
     firstName: $firstName,
     lastName: $firstName,
     email: $email,

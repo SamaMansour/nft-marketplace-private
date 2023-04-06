@@ -11,15 +11,17 @@ import Facebook from '../assets/svg/Facebook.svg';
 import Or from '../assets/svg/Or.svg';
 import { REGISTER_MUTATION } from '../services/authService/signup';
 import { useState } from 'react';
-import { useLazyQuery, gql } from '@apollo/client';
-
+import { useMutation, gql } from '@apollo/client';
 
 export default function SignUp() {
 
-  const [ firstName, setFirstName] = useState(null);
-  const [ email, setEmail] = useState(null);
-  const [ password, setPassword] = useState(null);
-  
+  const [ firstName, setFirstName] = useState('');
+  const [ email, setEmail] = useState('');
+  const [ password, setPassword] = useState('');
+  const [ confirmPassword, setConfirmPassword] = useState('');
+
+  const [signUp, { loading, error, data }]
+    = useMutation(REGISTER_MUTATION);
   return (
       <div className='signup'>
       <div>
@@ -36,22 +38,30 @@ export default function SignUp() {
         <img style={{ marginTop:'32px'}} src={Or}/>
         
         <div className='input-control'>
-          <form>
+          <form onSubmit= {() => signUp({ variables: { firstName, email, password } })
+          .then(()=> console.log("sent")).catch((error)=> console.log(error))}>
             <div className='input-layout'>
               <label> First Name</label>
                 <input className="input"
+                value={firstName}
+                onChange={(event) => setFirstName(event.target.value)}
                 type="text" />
             </div>
             
             <div className='input-layout' style={{marginTop:'42px'}}>  
               <label>Email</label>
               <input className="input"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
               type="email" />
             </div>
             <div className='password-layout' style={{marginTop:'48px'}}>
               <div className='password'>
                 <label>Password</label>
-                <input className="password-input" type="password" />
+                <input className="password-input"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+                type="password" />
               </div>
               <div className='password'>
                 <label>Confirm Password</label>
@@ -62,7 +72,7 @@ export default function SignUp() {
                   control={<Checkbox className='uncheck' value="allowExtraEmails" color="primary" />}
                   label="I agree to all Terms and conditions and Privacy Policy"
             />
-            <button className="btn" type="submit" >
+            <button className="btn" type="submit">
              Create An Account
             </button>
            
