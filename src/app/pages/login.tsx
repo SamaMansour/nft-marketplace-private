@@ -4,7 +4,7 @@ import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
 import LogoTitle from "../assets/images/LogoTitle.png"
 import LoginTitle from "../assets/images/LoginTitle.png"
-import '../styles/login.scss'
+import '../styles/forgot-password.scss'
 import LoginwithSocial from '../assets/svg/LoginwithSocial.svg';
 import OrLoginwithemail from '../assets/svg/OrLoginwithemail.svg';
 import Google  from '../assets/svg/Google.svg'
@@ -60,7 +60,7 @@ export default function Login() {
                       control={<Checkbox className='uncheck' value="allowExtraEmails" color="primary" />}
                       label="Remember me"
                 />
-                <Link href="#" variant="body2">
+                <Link href="/forgot-password" variant="body2">
                   Forgot Password?
                 </Link>
               </div>
