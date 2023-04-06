@@ -148,6 +148,7 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-top: 32px
 }
 
 .input-layout{
@@ -215,11 +216,13 @@
   flex: none;
   order: 2;
   flex-grow: 0;
+  margin-top: 24px;
 }
 
 .remember-me-checkbox {
-  width: 145px;
+  width: 190px;
   height: 24px;
+  margin-top: 24px;
 
 
   /* Inside auto layout */
@@ -227,4 +230,8 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.link{
+  margin-top: 44px;
 }
