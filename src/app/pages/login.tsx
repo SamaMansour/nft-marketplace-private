@@ -10,17 +10,18 @@ import OrLoginwithemail from '../assets/svg/OrLoginwithemail.svg';
 import Google  from '../assets/svg/Google.svg'
 import Facebook from '../assets/svg/Facebook.svg';
 import Or from '../assets/svg/Or.svg';
-import { REGISTER_MUTATION } from '../services/authService/signup';
+import { LOG_IN_QUERY } from '../services/authService/login';
 import { useState } from 'react';
 import { useLazyQuery, gql } from '@apollo/client';
 
 
 export default function Login() {
 
-  const [ firstName, setFirstName] = useState(null);
-  const [ email, setEmail] = useState(null);
-  const [ password, setPassword] = useState(null);
+  const [ email, setEmail] = useState('');
+  const [ password, setPassword] = useState('');
 
+  const [login, { loading, error, data }]
+    = useLazyQuery(LOG_IN_QUERY);
 
   return (
       <div className='signup'>
@@ -38,15 +39,21 @@ export default function Login() {
         <img style={{ marginTop:'32px'}} src={OrLoginwithemail}/>
         
         <div className='input-control'>
-          <form> 
+          <form  onSubmit= {() => login({ variables: { email, password } })
+          .then(()=> console.log("sent")).catch((error)=> console.log(error))}> 
             <div className='input-layout' style={{marginTop:'32px'}}>  
               <label>Email Address</label>
               <input className="input"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
               type="email" />
             </div>
               <div className='input-layout'style={{marginTop:'24px'}}>
                 <label>Password</label>
-                <input className="password-layout-input" type="password" />
+                <input className="password-layout-input"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+                type="password" />
               </div>
               <div className="remember-me">
                 <FormControlLabel className='remember-me-checkbox'
