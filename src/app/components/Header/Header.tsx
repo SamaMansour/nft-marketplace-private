@@ -4,6 +4,7 @@ import './Header.scss'
 import Logo from "../../assets/images/Logo.png"
 import SwitchButton from '../../components/Switch/Switch';
 import Dropdown from "../Dropdown/Dropdown";
+import Search from "../Search/Search"
 
 const Header = () => {
     return (
@@ -18,7 +19,9 @@ const Header = () => {
           <a>Blog</a>
           <Dropdown/>
         </div>
-       
+        <div className="search">
+          <Search/>
+        </div>
         <div id="call-to-action">
           <SwitchButton/>
           <button type="button" className="connect-wallet" >Connect Wallet</button>
