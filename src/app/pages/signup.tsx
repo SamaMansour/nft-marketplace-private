@@ -69,15 +69,17 @@ export default function SignUp() {
                 <input className="password-input" type="password" />
               </div>
             </div>
-            <FormControlLabel className='agreement'
-                  control={<Checkbox className='uncheck' value="allowExtraEmails" color="primary" />}
-                  label="I agree to all Terms and conditions and Privacy Policy"
-            />
-            <button className="btn" type="submit">
+            <div style={{marginRight:'54px'}}>
+              <FormControlLabel className='agreement'
+                    control={<Checkbox className='uncheck' value="allowExtraEmails" color="primary" />}
+                    label="I agree to all Terms and conditions and Privacy Policy"
+              />
+            </div>
+            <button className="signup-btn" type="submit">
              Create An Account
             </button>
            
-            <p>Already have an account?  <Link href="/login" variant="body2">Sign in</Link></p>
+            <p className='have-account'>Already have an account?  <Link href="/login" variant="body2">Sign in</Link></p>
           </form>
         </div>
       </div>

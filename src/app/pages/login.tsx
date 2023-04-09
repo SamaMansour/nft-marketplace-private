@@ -24,7 +24,7 @@ export default function Login() {
     = useLazyQuery(LOG_IN_QUERY);
 
   return (
-      <div className='signup'>
+      <div className='login'>
       <div>
         <img src={LoginTitle}/>
         <img  style={{marginLeft:'8px', marginBottom: '5px'}}src={LogoTitle}/>
@@ -38,36 +38,36 @@ export default function Login() {
 
         <img style={{ marginTop:'32px'}} src={OrLoginwithemail}/>
         
-        <div className='input-control'>
+        <div className='input-control' style={{ marginLeft:'36px'}}>
           <form  onSubmit= {() => login({ variables: { email, password } })
           .then(()=> console.log("sent")).catch((error)=> console.log(error))}> 
-            <div className='input-layout' style={{marginTop:'32px'}}>  
+            <div className='input-layout' style={{marginTop:'32px', marginLeft:'54px'}}>  
               <label>Email Address</label>
               <input className="input"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               type="email" />
             </div>
-              <div className='input-layout'style={{marginTop:'24px'}}>
+              <div className='input-layout'style={{marginTop:'24px', marginLeft:'54px'}}>
                 <label>Password</label>
                 <input className="password-layout-input"
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
                 type="password" />
               </div>
-              <div className="remember-me">
+              <div className="remember-me" style={{marginLeft:'54px'}}>
                 <FormControlLabel className='remember-me-checkbox'
                       control={<Checkbox className='uncheck' value="allowExtraEmails" color="primary" />}
                       label="Remember me"
                 />
-                <Link href="/forgot-password" variant="body2">
+                <Link href="/forgot-password" variant="body2" style={{ marginTop:'25px'}}>
                   Forgot Password?
                 </Link>
               </div>
             <button className="btn" type="submit" >
              Login
             </button>
-             <p>Don't have an account?<Link href="/" variant="body2">Sign up</Link></p>
+             <p className='without-account'>Don't have an account?  <Link href="/" variant="body2">Sign up</Link></p>
           </form>
         </div>
       </div>

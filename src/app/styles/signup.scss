@@ -154,7 +154,7 @@
   
 }
 
-.btn{
+.signup-btn{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -169,6 +169,9 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin-left: 14px;
+ 
+
 }
 
 .input-layout{
@@ -202,4 +205,8 @@
   background: #FFFFFF;
   border: 1px solid #2571EA;
   border-radius: 4px;
+}
+
+.have-account{
+  margin-top: 32px;
 }

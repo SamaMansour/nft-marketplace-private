@@ -29,10 +29,10 @@ export default function ForgotPassword() {
               <input className="input"
               type="email" />
             </div>
-            <button className="btn" type="submit" >
+            <button className="reset-btn" type="submit" >
              Reset Password
             </button>
-             <p>Back to<Link href="/login" variant="body2">Login</Link></p>
+             <p className='back-to-login'>Back to<Link href="/login" variant="body2">Login</Link></p>
           </form>
         </div>
       </div>
