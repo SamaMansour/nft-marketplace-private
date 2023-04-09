@@ -41,7 +41,7 @@ export default function SignUp() {
           <form onSubmit= {() => signUp({ variables: { firstName, email, password } })
           .then(()=> console.log("sent")).catch((error)=> console.log(error))}>
 
-            <div className='input-layout'>
+            <div className='input-layout' style={{marginLeft: '14px'}}>
               <label> First Name</label>
                 <input className="input"
                 value={firstName}
@@ -49,7 +49,7 @@ export default function SignUp() {
                 type="text" />
             </div>
             
-            <div className='input-layout' style={{marginTop:'42px'}}>  
+            <div className='input-layout' style={{marginTop:'24px', marginLeft:'14px'}}>  
               <label>Email</label>
               <input className="input"
               value={email}

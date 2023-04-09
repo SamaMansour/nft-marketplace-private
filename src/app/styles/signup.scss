@@ -125,6 +125,27 @@
   flex-grow: 0;
 }
 
+.row{
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  width: 516px;
+  height: 68px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
   
 .input{
   font-size: larger;
