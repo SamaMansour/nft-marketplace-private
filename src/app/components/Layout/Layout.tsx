@@ -7,14 +7,15 @@ import ScrollToTop from "../../components/ScrollToTop/ScrollToTop"
 import Signup from "../../pages/signup";
 import Login from "../../pages/login";
 import ForgotPassword from "../../pages/forgotPassword";
-
+import Home from "../../pages/Home";
 const Layout = () => {
   return (
     <div>
       <Header />
       <div>
 				<Routes>
-					<Route path='/' element={<Signup/>}/>
+          <Route path='/' element={<Home/>}/>
+					<Route path='/signup' element={<Signup/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/forgot-password' element={<ForgotPassword/>}/>
 				</Routes>

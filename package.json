@@ -17,6 +17,7 @@
     "@types/react": "^18.0.30",
     "@types/react-dom": "^18.0.11",
     "@usedapp/core": "^1.2.7",
+    "api": "^5.0.8",
     "bootstrap": "^5.2.3",
     "concurrently": "^8.0.1",
     "ethers": "^6.2.3",
