@@ -10,16 +10,19 @@ const SellerSection = () => {
     <section className="seller-section">
       <Container>
         <Row>
+          <Col lg="12" className="mb-5">
             <div className="seller__section-title">
               <img src={TopCreator} />
               <img src={SellerSectionSubtitle}/>
             </div>
+            </Col>
 
           {SELLER__DATA.map((item) => (
-            <Col lg="2" md="3" sm="4" xs="6" key={item.id} className="mb-4">
-              <div className="single__seller-card d-flex align-items">
+            
+            <Col md="6" sm="3" xs="3" key={item.id}>
+              <div className="single__seller-card d-flex align-items-center gap-3">
                 <div className="seller__img">
-                  <img src={item.sellerImg} alt="" className="mw-150" />
+                  <img src={item.sellerImg} alt=""  />
                 </div>
 
                 <div className="seller__content">

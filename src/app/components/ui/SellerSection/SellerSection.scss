@@ -1,3 +1,4 @@
+
 .seller-section{
 	position: absolute;
 	width: 6448px;
@@ -6,6 +7,23 @@
   bottom: 989px;
 
 }
+.single__seller-card{
+	/* Auto layout */
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 24px 54px;
+	gap: 16px;
+
+
+	/* White */
+
+	background: #FFFFFF;
+	box-shadow: 4px 4px 80px rgba(173, 173, 173, 0.25);
+	border-radius: 60px;
+}
+
 
 .seller__section-title {
 	h3 {
@@ -13,19 +31,14 @@
 	}
 }
 .seller__img {
-	width: 50px;
-	height: 180px;
+	position: absolute;
+	width: 62.4px;
+	height: 63px;
+	left: 52.8px;
+	top: 29px;
 }
 .seller__content {
-	h6 {
-		font-size: 1rem;
-		color: #000;
-	}
+	
+	width: 700px;
 }
-@media only screen and (max-width: 292px) {
-	.seller__content {
-		h6 {
-			font-size: 0.8rem !important;
-		}
-	}
-}
+
