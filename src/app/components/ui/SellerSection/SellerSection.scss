@@ -1,11 +1,20 @@
+.seller-section{
+	position: absolute;
+	width: 6448px;
+	height: 459px;
+	left: -2459px;
+  bottom: 989px;
+
+}
+
 .seller__section-title {
 	h3 {
 		color: #000;
 	}
 }
 .seller__img {
-	width: 80px;
-	height: 80px;
+	width: 50px;
+	height: 180px;
 }
 .seller__content {
 	h6 {
@@ -13,7 +22,7 @@
 		color: #000;
 	}
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 292px) {
 	.seller__content {
 		h6 {
 			font-size: 0.8rem !important;
