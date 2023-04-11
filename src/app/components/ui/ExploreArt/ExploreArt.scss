@@ -1,11 +1,13 @@
 $color_1: #fff;
 $color_2: rgba(255, 255, 255, 0.772);
 $color_3: #5142fc;
+$color_4: #343444;
 
 .single__nft__card {
 	padding: 20px;
-	background: #343444;
+	background: #fff;
 	border-radius: 10px;
+
 }
 .nft__img {
 	img {
@@ -16,7 +18,7 @@ $color_3: #5142fc;
 .nft__title {
 	margin-bottom: 15px;
 	a {
-		color: $color_1;
+		color: $color_4;
 		font-size: 1rem;
 		text-decoration: none;
 		&:hover {
@@ -37,7 +39,7 @@ $color_3: #5142fc;
 	}
 	p {
 		font-size: 0.9rem;
-		color: $color_1;
+		color: $color_4;
 		margin-bottom: 0;
 		font-weight: 500;
 	}

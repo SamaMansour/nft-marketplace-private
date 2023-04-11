@@ -18,19 +18,21 @@ const SellerSection = () => {
             </Col>
 
           {SELLER__DATA.map((item) => (
-            
-            <Col md="6" sm="3" xs="3" key={item.id}>
-              <div className="single__seller-card d-flex align-items-center gap-3">
-                <div className="seller__img">
-                  <img src={item.sellerImg} alt=""  />
-                </div>
-
-                <div className="seller__content">
-                  <h6>{item.sellerName}</h6>
-                  <h6>{item.currentBid} ETH</h6>
-                </div>
+            <>
+            <Col lg="1" md="6" sm="3" xs="3" key={item.id} class="col-md-5 col-md-offset-12">
+            <div className="single__seller-card">
+              <div >
+                <img src={item.sellerImg} alt=""  style={{borderRadius:'50%'}}/>
               </div>
-            </Col>
+
+              <div className="seller__content">
+                <h6>{item.sellerName}</h6>
+                <h6>{item.currentBid} ETH</h6>
+              </div>
+            </div>
+          </Col>
+          
+            </>
           ))}
         </Row>
       </Container>

@@ -13,7 +13,7 @@ const ExploreArt = () => {
       <Container>
         <Row>
           <Col lg="12" className="mb-5">
-            <div className="live__auction__top d-flex align-items-center justify-content-between ">
+            <div className="live__auction__top  ">
               <h3>Live Auction</h3>
               <span>
                 <Link to="/market">Explore more</Link>

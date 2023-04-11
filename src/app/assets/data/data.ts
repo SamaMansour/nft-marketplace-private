@@ -111,7 +111,7 @@ export const SELLER__DATA = [
   {
     id: "01",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
-    sellerName: "Ryan Carder",
+    sellerName: "Benji Connell",
     sellerImg: ava01,
     currentBid: 5.89,
     fbUrl: "#",

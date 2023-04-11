@@ -1,0 +1,168 @@
+.live_art__section{
+  position: absolute;
+  width: 1600px;
+  height: 794px;
+  left: 160px;
+  top: 1518px;
+
+  /* Skiny */
+
+  background: #F4A7A5;
+  border-radius: 48px;
+  opacity: 0.7;
+  z-index: 5;
+}
+
+.live__art-title{
+  margin-left: 400px;
+}
+
+.art-collection{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0px;
+  gap: 64px;
+
+
+  position: relative;
+ 
+  left: 100px;
+  top: 30px;
+}
+.art-details{
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  width: 534px;
+  height: 367px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.art-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  width: 690px;
+  height: 469px;
+  position: relative;
+  bottom: 80px;
+  
+
+  background: #FFFFFF;
+  border-radius: 16px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+ 
+}
+
+$color_1: #fff;
+$color_2: rgba(255, 255, 255, 0.772);
+$color_3: #5142fc;
+$color_4: #343444;
+
+.single__nft__card {
+	padding: 20px;
+	background: #fff;
+	border-radius: 10px;
+
+}
+.nft__img {
+	img {
+		border-radius: 10px;
+	}
+	margin-bottom: 15px;
+}
+.nft__title {
+	margin-bottom: 15px;
+	a {
+		color: $color_4;
+		font-size: 1rem;
+		text-decoration: none;
+		&:hover {
+			color: $color_1;
+		}
+	}
+}
+.creator__img {
+	width: 40px;
+	height: 40px;
+}
+.creator__info {
+	h6 {
+		font-size: 0.7rem;
+		color: $color_2;
+		margin-bottom: 0;
+		font-weight: 300;
+	}
+	p {
+		font-size: 0.9rem;
+		color: $color_4;
+		margin-bottom: 0;
+		font-weight: 500;
+	}
+}
+.bid__btn {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 8px;
+
+  width: 135px;
+  height: 56px;
+
+  /* Blue */
+
+  background: #2571EA;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+	&:hover {
+		background: #fff;
+		color: $color_3;
+	}
+}
+.history__link {
+	a {
+		text-decoration: none;
+		color: $color_2;
+		font-size: 0.9rem;
+		&:hover {
+			color: $color_1;
+		}
+	}
+}
+.live__auction__top {
+	h3 {
+		color: $color_1;
+	}
+	span {
+		a {
+			text-decoration: none;
+			color: $color_1;
+			border-bottom: 1px solid #5142fc;
+		}
+	}
+}
