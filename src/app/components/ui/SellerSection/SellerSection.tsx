@@ -19,8 +19,8 @@ const SellerSection = () => {
 
           {SELLER__DATA.map((item) => (
             <>
-            <Col lg="1" md="6" sm="3" xs="3" key={item.id} class="col-md-5 col-md-offset-12">
-            <div className="single__seller-card">
+            <Col lg="1" xs="6" md="4" key={item.id} class="col-md-48 col-md-offset-64">
+            <div className="single__seller-card" style={{ marginLeft:'40px'}}>
               <div >
                 <img src={item.sellerImg} alt=""  style={{borderRadius:'50%'}}/>
               </div>

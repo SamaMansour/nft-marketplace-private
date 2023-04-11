@@ -20,4 +20,20 @@
 			font-size: 0.6rem !important;
 		}
 	}
+
+	.single__nft__card{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 16px;
+
+		position: absolute;
+		width: 376px;
+		height: 610px;
+		left: 20px;
+		top: 20px;
+
+		background: #F8F8F8;
+		border-radius: 16px;
+	}
 }

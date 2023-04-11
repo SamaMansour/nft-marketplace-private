@@ -82,3 +82,30 @@ $color_4: #343444;
 		}
 	}
 }
+.explore-btn{
+	box-sizing: border-box;
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 24px;
+	gap: 8px;
+
+	width: 149px;
+	height: 56px;
+
+	/* White */
+
+	background: #FFFFFF;
+	/* Light Gray - Web */
+
+	border: 1px solid #CDCDCD;
+	border-radius: 8px;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}

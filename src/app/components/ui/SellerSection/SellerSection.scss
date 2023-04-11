@@ -16,12 +16,13 @@
 	padding: 24px 54px;
 	gap: 16px;
 	width: 300px;
-
+  
 	/* White */
 
 	background: #FFFFFF;
 	box-shadow: 4px 4px 80px rgba(173, 173, 173, 0.25);
 	border-radius: 60px;
+	margin-left: 200px;
 }
 
 
@@ -36,13 +37,24 @@
 	height: 63px;
 	left: 52.8px;
 	top: 29px;
+	margin-left: 200px;
 }
 .seller__content {
-	width: 700px;
+	width: 200px;
 }
 
 .box{
 	padding-left: 50px;
+}
+
+.seller-frame{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 64px;
+
+	
 }
 
 @media only screen and (max-width: 992px) {
