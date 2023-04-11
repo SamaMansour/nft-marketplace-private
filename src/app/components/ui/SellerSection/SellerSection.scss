@@ -1,10 +1,11 @@
 
 .seller-section{
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 459px;
-	left: -2459px;
-  bottom: 989px;
+	left:20px;
+	right: 200px;
+	margin-right: 0px;
 
 }
 .single__seller-card{
@@ -27,9 +28,18 @@
 
 
 .seller__section-title {
-	h3 {
-		color: #000;
-	}
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 16px;
+  left:-1300px;
+	bottom: 200px;
+	position: relative;
+	width: 604px;
+	height: 115px;
+	
 }
 .seller__img {
 	position: absolute;
@@ -61,4 +71,20 @@
   .seller__content h6 {
     font-size: 0.8rem !important;
   }
+}
+
+.row-frame{
+	
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 64px;
+
+	position: absolute;
+	left: 2000;
+	right: 0%;
+	top: 0%;
+	bottom: 158.7%;
+	margin-top: 50px;
 }

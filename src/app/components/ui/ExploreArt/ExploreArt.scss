@@ -94,6 +94,7 @@ $color_4: #343444;
 
 	width: 149px;
 	height: 56px;
+	margin-left: 1000px;
 
 	/* White */
 
@@ -107,5 +108,25 @@ $color_4: #343444;
 
 	flex: none;
 	order: 1;
+	flex-grow: 0;
+}
+
+.row-frame {
+	/* Auto layout */
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 32px;
+
+	width: 1600px;
+	height: 610px;
+
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 0;
 	flex-grow: 0;
 }

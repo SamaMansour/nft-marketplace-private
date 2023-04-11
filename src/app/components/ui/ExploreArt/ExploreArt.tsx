@@ -24,18 +24,27 @@ const ExploreArt = () => {
             <div>
               <img src={ExploreTitle} />
               <img src={ExploreSubtitle} />
-              <span>
+              
                 <button className="explore-btn" onClick={routeMarket}>Explore more</button>
-              </span>
+            
             </div>
           </Col>
-          <Row>
+          <div className="row-frame" style={{marginTop:'2670px'}}>
           {NFT__DATA.slice(0, 4).map((item) => (
-            <Col lg="8" md="6" sm="3" xs="3" key={item.id} class="col-md-5 col-md-offset-12">
+            <Col lg="2" md="6" sm="3" xs="3" key={item.id} class="col-md-5 col-md-offset-12">
               <NftCard key={item.id} item={item} />
             </Col>
+          
           ))}
-          </Row>
+          </div>
+          <div className="row-frame" style={{marginTop:'3200px'}}>
+          {NFT__DATA.slice(4, 8).map((item) => (
+            <Col lg="2" md="6" sm="3" xs="3" key={item.id} class="col-md-5 col-md-offset-12">
+              <NftCard key={item.id} item={item} />
+            </Col>
+          
+          ))}
+          </div>
         </Row>
       </Container>
     </section>
