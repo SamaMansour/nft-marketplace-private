@@ -14,6 +14,8 @@ import ava03 from "../images/ava-03.png";
 import ava04 from "../images/ava-04.png";
 import ava05 from "../images/ava-05.png";
 import ava06 from "../images/ava-06.png";
+import profile01 from "../images/profile-01.png";
+import profile02 from "../images/profile-02.png"
 
 export const NFT__DATA = [
   {
@@ -251,4 +253,13 @@ export const SELLER__DATA = [
     instaUrl: "#",
     twitUrl: "#",
   },
+];
+
+export const Collections__DATA = [
+  {
+    id: "01",
+    title : "Nft Art 3d",
+    desc: "Created by Tianna Moore",
+    profileImage: ""
+  }
 ];
