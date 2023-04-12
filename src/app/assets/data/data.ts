@@ -16,15 +16,10 @@ import ava05 from "../images/ava-05.png";
 import ava06 from "../images/ava-06.png";
 import profile01 from "../images/profile-01.png";
 import profile02 from "../images/profile-02.png"
-import image01 from "../images/img-01.png";
-import image02 from "../images/img-02.png";
-import image03 from "../images/img-02.png"
-import image04 from "../images/img-04.png";
-import image05 from "../images/img-05.png";
-import image06 from "../images/img-06.png";
-import image07 from "../images/img-07.png";
-import image08 from "../images/img-08.png";
-import image09 from "../images/img-09.png"
+import pic1 from "../images/pic01.png";
+import pic2 from "../images/pic02.png";
+import pic3 from "../images/pic03.png";
+
 
 
 
@@ -273,9 +268,8 @@ export const Collections__DATA = [
     title : "Nft Art 3d",
     creator: "Tianna Moore",
     profileImage: profile01,
-    image_01: image01,
-    image_02: image02,
-    image_03: image03,
+    imgUrl: pic1
+   
 
   },
 
@@ -284,10 +278,9 @@ export const Collections__DATA = [
     title : "Photography",
     creator: "Jenny John",
     profileImage: profile02,
-    image_01: image04,
-    image_02: image05,
-    image_03: image06,
+    imgUrl: pic2
 
+  
   },
 
   {
@@ -295,9 +288,8 @@ export const Collections__DATA = [
     title : "Nft Art 3d",
     creator: "Tianna Moore",
     profileImage: profile01,
-    image_01: image07,
-    image_02: image08,
-    image_03: image09,
+    imgUrl: pic3
 
+  
   }
 ];

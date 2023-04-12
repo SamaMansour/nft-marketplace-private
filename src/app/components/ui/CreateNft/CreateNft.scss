@@ -1,0 +1,64 @@
+.nft__info{
+	position: absolute;
+	left: 10%;
+	right: 0%;
+	top: 0%;
+	bottom: 20%;
+	background: linear-gradient(90.34deg, #2571EA 0.53%, #7185D0 29.11%, #F5A8A4 78.24%);
+	opacity: 0.8;
+	h3{
+		width: 578px;
+		height: 144px;
+
+		/* Heading/Heading2 */
+
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 72px;
+		display: flex;
+		align-items: center;
+		/* Typeface */
+		color: #060707;
+		/* Inside auto layout */
+		flex: none;
+		order: 0;
+		flex-grow: 0;
+
+	}
+
+	.art__img{
+		position: absolute;
+		left: 49.7%;
+		right: 10.26%;
+		top: 16.46%;
+		bottom: 16.13%;
+
+	}
+}
+
+
+.create-btn{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 24px;
+	gap: 8px;
+
+	width: 182px;
+	height: 56px;
+
+	/* Blue */
+
+	background: #2571EA;
+	border-radius: 8px;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+	
+}
