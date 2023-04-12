@@ -17,3 +17,48 @@
   order: 0;
   flex-grow: 0;
 }
+
+.creator__img {
+  width: 40px;
+  height: 40px;
+}
+.creator__info {
+  h6 {
+    font-size: 0.7rem;
+    color: $color_2;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+  p {
+    font-size: 0.9rem;
+    color: $color_4;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+}
+
+.nft__img {
+  img {
+    border-radius: 10px;
+  }
+  margin-bottom: 15px;
+}
+.nft__title {
+  margin-bottom: 15px;
+  a {
+    color: $color_4;
+    font-size: 1rem;
+    text-decoration: none;
+    &:hover {
+      color: $color_1;
+    }
+  }
+}
+
+.sm-img {
+  width: 463px;
+  height: 406.59px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}

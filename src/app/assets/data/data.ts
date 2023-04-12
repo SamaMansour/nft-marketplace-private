@@ -271,7 +271,7 @@ export const Collections__DATA = [
   {
     id: "01",
     title : "Nft Art 3d",
-    desc: "Created by Tianna Moore",
+    creator: "Tianna Moore",
     profileImage: profile01,
     image_01: image01,
     image_02: image02,
@@ -282,7 +282,7 @@ export const Collections__DATA = [
   {
     id: "02",
     title : "Photography",
-    desc: "Created by Jenny John",
+    creator: "Jenny John",
     profileImage: profile02,
     image_01: image04,
     image_02: image05,
@@ -293,7 +293,7 @@ export const Collections__DATA = [
   {
     id: "03",
     title : "Nft Art 3d",
-    desc: "Created by Tianna Moore",
+    creator: "Tianna Moore",
     profileImage: profile01,
     image_01: image07,
     image_02: image08,
