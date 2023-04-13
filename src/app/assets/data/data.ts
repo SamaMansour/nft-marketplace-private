@@ -19,6 +19,9 @@ import profile02 from "../images/profile-02.png"
 import pic1 from "../images/pic01.png";
 import pic2 from "../images/pic02.png";
 import pic3 from "../images/pic03.png";
+import mask01 from "../images/mask-group.png";
+import mask02 from "../images/mask-group1.png"
+import mask03 from "../images/mask-group2.png"
 
 
 
@@ -293,3 +296,36 @@ export const Collections__DATA = [
   
   }
 ];
+
+
+export const TOP__DATA = [
+  {
+    id: "01",
+    title: "Travel Monkey Club",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia, nostrum et deleniti vero corrupti facilis minima laborum nesciunt nulla error natus saepe illum quasi ratione suscipit tempore dolores. Recusandae, similique modi voluptates dolore repellat eum earum sint.",
+    imgUrl: mask01,
+    creator: "Trista Francis",
+    creatorImg: ava01,
+    currentBid: 5.89,
+  },
+
+  {
+    id: "02",
+    title: "Sir Lion Swag",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia, nostrum et deleniti vero corrupti facilis minima laborum nesciunt nulla error natus saepe illum quasi ratione suscipit tempore dolores. Recusandae, similique modi voluptates dolore repellat eum earum sint.",
+    imgUrl: mask02,
+    creator: "Trista Francis",
+    creatorImg: ava02,
+    currentBid: 5.09,
+  },
+
+  {
+    id: "03",
+    title: "Civilian",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia, nostrum et deleniti vero corrupti facilis minima laborum nesciunt nulla error natus saepe illum quasi ratione suscipit tempore dolores. Recusandae, similique modi voluptates dolore repellat eum earum sint.",
+    imgUrl: mask03,
+    creator: "Trista Francis",
+    creatorImg: ava03,
+    currentBid: 6.89,
+  }
+]

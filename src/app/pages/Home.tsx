@@ -8,6 +8,7 @@ import PopularCollections from '../components/ui/Popular-collections/PopularColl
 import StepSection from '../components/ui/StepSection/StepSection';
 import CreateNft from "../components/ui/CreateNft/CreateNft";
 import TopCollections from '../components/ui/Top-collections/TopCollections';
+import RecommendedArt from '../components/ui/RecommendedArt/RecommendedArt';
 
 const Home = () => {
   return (
@@ -17,10 +18,10 @@ const Home = () => {
      <LiveArt/>
     <ExploreArt/>
     <PopularCollections/>
-   
-    {/* <StepSection/> */}
     <CreateNft/>
     <TopCollections/>
+    <RecommendedArt/>
+    {/* <StepSection/>  */}
     </>
   )
 }

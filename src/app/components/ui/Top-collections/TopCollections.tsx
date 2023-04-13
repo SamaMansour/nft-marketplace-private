@@ -3,7 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import NftCard from "../Nft-card/NftCard";
-import { NFT__DATA } from "../../../assets/data/data";
+import { TOP__DATA } from "../../../assets/data/data";
 import TopTitle from "../../../assets/svg/top-title.svg"
 import TopSubtitle from "../../../assets/svg/top-subtitle.svg"
 
@@ -22,8 +22,8 @@ const TopCollections = () => {
               <img src={TopSubtitle} />
             </div>
           </Col>
-          <div className="row-frame" style={{marginTop:'4170px', marginLeft:'200px'}}>
-          {NFT__DATA.slice(0, 3).map((item) => (
+          <div className="row-frame" style={{marginTop:'6170px', marginLeft:'200px'}}>
+          {TOP__DATA.slice(0, 3).map((item) => (
             <Col lg="2" md="6" sm="3" xs="3" key={item.id} class="col-md-5 col-md-offset-12">
               <NftCard key={item.id} item={item} />
             </Col>
