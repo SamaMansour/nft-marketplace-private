@@ -13,7 +13,7 @@ import "./TopCollections.scss";
 const TopCollections = () => {
 
   return (
-    <section style={{ marginTop:'1900px'}}>
+    <section style={{ marginTop:'1600px'}}>
       <Container>
         <Row>
         <Col lg="12" className="mb-5">
@@ -22,7 +22,7 @@ const TopCollections = () => {
               <img src={TopSubtitle} />
             </div>
           </Col>
-          <div className="row-frame" style={{marginTop:'6170px', marginLeft:'200px'}}>
+          <div className="row-frame" style={{marginTop:'5900px', marginLeft:'200px'}}>
           {TOP__DATA.slice(0, 3).map((item) => (
             <Col lg="3"  key={item.id} class="col-md-5 col-md-offset-12">
               <NftCard key={item.id} item={item} />
