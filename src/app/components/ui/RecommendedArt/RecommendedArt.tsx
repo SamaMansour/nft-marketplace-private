@@ -13,7 +13,7 @@ import "./RecommendedArt.scss";
 const RecommendedArt = () => {
   
   return (
-    <section className="recommended-section" style={{ marginTop:'900px'}}>
+    <section className="recommended-section" style={{ marginTop:'900px', height:"800px", paddingTop:"5px", opacity:"0.7"}}>
       <Container>
         <Row>
           <Col lg="12" className="mb-5">
@@ -22,7 +22,7 @@ const RecommendedArt = () => {
               <img src={RecommendedSubtitle} />    
             </div>
           </Col>
-          <div className="row-frame" style={{marginTop:'7270px'}}>
+          <div className="row-frame" style={{marginTop:'6870px', height:"600px"}}>
           {NFT__DATA.slice(0, 4).map((item) => (
             <Col lg="2" md="6" sm="3" xs="3" key={item.id} class="col-md-5 col-md-offset-12">
               <NftCard key={item.id} item={item} />
