@@ -21,7 +21,7 @@ const Home = () => {
     <CreateNft/>
     <TopCollections/>
     <RecommendedArt/>
-    {/* <StepSection/>  */}
+    <StepSection/> 
     </>
   )
 }

@@ -1,6 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
+import icon from "../../../assets/svg/Icon.svg";
+import icon01 from "../../../assets/svg/icon-01.svg";
+import icon02 from "../../../assets/svg/icon-02.svg";
+import icon03 from "../../../assets/svg/icon-03.svg";
+import CreateSell from "../../../assets/svg/create-and-sell.svg"
+import RecommendedSubtitle from "../../../assets/svg/recommended-subtitle.svg"
+
+
 
 import "./StepSection.scss";
 
@@ -8,25 +16,25 @@ const STEP__DATA = [
   {
     title: "Setup your wallet",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit eligendi, facilis voluptatum fugit illum ",
-    icon: "ri-wallet-line",
+    icon: icon,
   },
 
   {
     title: "Create your collection",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit eligendi, facilis voluptatum fugit illum ",
-    icon: "ri-layout-masonry-line",
+    icon: icon01,
   },
 
   {
     title: "Add your NFTs",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit eligendi, facilis voluptatum fugit illum ",
-    icon: "ri-image-line",
+    icon: icon02,
   },
 
   {
     title: "List them for sale",
     desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit eligendi, facilis voluptatum fugit illum ",
-    icon: "ri-list-check",
+    icon: icon03,
   },
 ];
 
@@ -35,15 +43,16 @@ const StepSection = () => {
     <section>
       <Container>
         <Row>
-          <Col>
-            <h3 className="step__title">Create and sell your NFTs</h3>
+          <Col style={{marginLeft:"50%"}}>
+            <img src={CreateSell}/>
+            <img src={RecommendedSubtitle}/>
           </Col>
-
+          <div className="set-up">
           {STEP__DATA.map((item, index) => (
             <Col  key={index} className="mb-4">
               <div className="single__step__item">
                 <span>
-                  <i className={item.icon}></i>
+                  <img src={item.icon}/>
                 </span>
                 <div className="step__item__content">
                   <h5>
@@ -53,7 +62,8 @@ const StepSection = () => {
                 </div>
               </div>
             </Col>
-          ))}
+            ))}
+          </div>
         </Row>
       </Container>
     </section>

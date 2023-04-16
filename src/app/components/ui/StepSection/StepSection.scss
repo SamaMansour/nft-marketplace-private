@@ -1,12 +1,13 @@
 $color_1: #fff;
+$color_2: #343444;
 
 .single__step__item {
-	background: #343444;
+	background: $color_1;
 	border-radius: 5px;
 	padding: 30px;
 	span {
 		i {
-			color: $color_1;
+			color: $color_2;
 			padding: 15px;
 			font-size: 1.5rem;
 			background: #5142fc;
@@ -15,13 +16,13 @@ $color_1: #fff;
 	}
 }
 .step__title {
-	color: $color_1;
+	color: $color_2;
 }
 .step__item__content {
 	h5 {
 		a {
 			text-decoration: none;
-			color: $color_1;
+			color: $color_2;
 		}
 	}
 	margin-top: 20px !important;
@@ -40,4 +41,20 @@ $color_1: #fff;
 			line-height: 25px;
 		}
 	}
+}
+.set-up {
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 32px;
+	margin-top: 500px;
+
+	position: absolute;
+	width: 1596px;
+	height: 264px;
+	left: 161px;
+	top: 7198px;
+
 }
