@@ -24,7 +24,7 @@ const TopCollections = () => {
           </Col>
           <div className="row-frame" style={{marginTop:'6170px', marginLeft:'200px'}}>
           {TOP__DATA.slice(0, 3).map((item) => (
-            <Col lg="2" md="6" sm="3" xs="3" key={item.id} class="col-md-5 col-md-offset-12">
+            <Col lg="3"  key={item.id} class="col-md-5 col-md-offset-12">
               <NftCard key={item.id} item={item} />
             </Col>
           
