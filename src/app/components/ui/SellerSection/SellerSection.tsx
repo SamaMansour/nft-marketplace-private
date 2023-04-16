@@ -15,7 +15,7 @@ const SellerSection = () => {
               <img src={SellerSectionSubtitle}/>
             </div>
         
-          <div className="row-frame">
+          <div className="row-frame" style={{marginRight:'10%'}}>
           {SELLER__DATA.slice(0, 4).map((item) => (
             <>
            
@@ -34,7 +34,7 @@ const SellerSection = () => {
             </>
           ))}
           </div>
-          <div className="row-frame" style={{marginTop:'200px'}}>
+          <div className="row-frame" style={{marginTop:'200px', marginRight:'10%'}}>
           {SELLER__DATA.slice(0, 4).map((item) => (
             <>
            
