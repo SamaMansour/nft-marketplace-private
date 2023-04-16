@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState} from "react";
+import { FileUploader } from "react-drag-drop-files";
+
 
 import { Container, Row, Col } from "reactstrap";
 import NftCard from "../components/ui/Nft-card/NftCard";
@@ -18,26 +20,34 @@ const item = {
 };
 
 const CreateItem = () => {
+  const fileTypes = ["JPEG", "PNG", "GIF"];
+  const [file, setFile] = useState(null);
+  const handleChange = (file: any) => {
+    setFile(file);
+  };
+
   return (
     <>
-     
-
       <section>
+     
         <Container>
           <Row>
-            <Col lg="3" md="4" sm="6">
-              <h5 className="mb-4 text-light">Preview Item</h5>
+            <h1 className="title">Create your item</h1>
+            <h6 className="subtitle">Rankings by sales volume</h6>
+            <Col lg="12" className="mb-5" style={{ marginTop:'230px'}}>
               <NftCard item={item} />
             </Col>
-
-            <Col lg="9" md="8" sm="6">
+            <Col>
               <div className="create__item">
                 <form>
-                  <div className="form__input">
-                    <label htmlFor="">Upload File</label>
-                    <input type="file" className="upload__input" />
-                  </div>
-
+                <div className="form__input">
+                  <FileUploader
+                    multiple={true}
+                    handleChange={handleChange}
+                    name="file"
+                    types={fileTypes}
+                  />
+                </div>
                   <div className="form__input">
                     <label htmlFor="">Price</label>
                     <input

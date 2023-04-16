@@ -2,10 +2,9 @@
 	input {
 		width: 100%;
 		padding: 7px 25px;
-		color: #fff;
+		color: #343434;
 		font-size: 0.8rem;
 		background: transparent;
-		border: 1px solid rgba(221, 221, 221, 0.171);
 		outline: none;
 		border-radius: 5px;
 		cursor: pointer;
@@ -30,8 +29,25 @@
 		padding: 40px 25px;
 	}
 }
+h1{
+  position: absolute;
+  left: 72px;
+}
 @media only screen and (max-width: 576px) {
 	.create__item {
-		margin-top: 15px;
+    margin-top: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+
 	}
+}
+
+.create__item {
+  margin-top: 15px;
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  top: 30%;
+
 }
