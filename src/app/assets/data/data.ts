@@ -1,12 +1,12 @@
-import img01 from "../images/img-01.jpg";
-import img02 from "../images/img-02.jpg";
-import img03 from "../images/img-03.jpg";
-import img04 from "../images/img-04.jpg";
-import img05 from "../images/img-05.jpg";
-import img06 from "../images/img-06.jpg";
-import img07 from "../images/img-07.jpg";
-import img08 from "../images/img-08.jpg";
-import img09 from "../images/img-09.jpg";
+import img01 from "../images/img-01.png";
+import img02 from "../images/img-02.png";
+import img03 from "../images/img-03.png";
+import img04 from "../images/img-04.png";
+import img05 from "../images/img-05.png";
+import img06 from "../images/img-06.png";
+import img07 from "../images/img-07.png";
+import img08 from "../images/img-08.png";
+import img09 from "../images/img-09.png";
 
 import ava01 from "../images/ava-01.png";
 import ava02 from "../images/ava-02.png";
@@ -16,6 +16,16 @@ import ava05 from "../images/ava-05.png";
 import ava06 from "../images/ava-06.png";
 import profile01 from "../images/profile-01.png";
 import profile02 from "../images/profile-02.png"
+import pic1 from "../images/pic01.png";
+import pic2 from "../images/pic02.png";
+import pic3 from "../images/pic03.png";
+import mask01 from "../images/mask-group.png";
+import mask02 from "../images/mask-group1.png"
+import mask03 from "../images/mask-group2.png"
+
+
+
+
 
 export const NFT__DATA = [
   {
@@ -259,7 +269,63 @@ export const Collections__DATA = [
   {
     id: "01",
     title : "Nft Art 3d",
-    desc: "Created by Tianna Moore",
-    profileImage: ""
+    creator: "Tianna Moore",
+    profileImage: profile01,
+    imgUrl: pic1
+   
+
+  },
+
+  {
+    id: "02",
+    title : "Photography",
+    creator: "Jenny John",
+    profileImage: profile02,
+    imgUrl: pic2
+
+  
+  },
+
+  {
+    id: "03",
+    title : "Nft Art 3d",
+    creator: "Tianna Moore",
+    profileImage: profile01,
+    imgUrl: pic3
+
+  
   }
 ];
+
+
+export const TOP__DATA = [
+  {
+    id: "01",
+    title: "Travel Monkey Club",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia, nostrum et deleniti vero corrupti facilis minima laborum nesciunt nulla error natus saepe illum quasi ratione suscipit tempore dolores. Recusandae, similique modi voluptates dolore repellat eum earum sint.",
+    imgUrl: mask01,
+    creator: "Trista Francis",
+    creatorImg: ava01,
+    currentBid: 5.89,
+  },
+
+  {
+    id: "02",
+    title: "Sir Lion Swag",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia, nostrum et deleniti vero corrupti facilis minima laborum nesciunt nulla error natus saepe illum quasi ratione suscipit tempore dolores. Recusandae, similique modi voluptates dolore repellat eum earum sint.",
+    imgUrl: mask02,
+    creator: "Trista Francis",
+    creatorImg: ava02,
+    currentBid: 5.09,
+  },
+
+  {
+    id: "03",
+    title: "Civilian",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia, nostrum et deleniti vero corrupti facilis minima laborum nesciunt nulla error natus saepe illum quasi ratione suscipit tempore dolores. Recusandae, similique modi voluptates dolore repellat eum earum sint.",
+    imgUrl: mask03,
+    creator: "Trista Francis",
+    creatorImg: ava03,
+    currentBid: 6.89,
+  }
+]

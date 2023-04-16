@@ -23,7 +23,7 @@ const NftCard = (props: any) => {
 
         <div className="creator__info-wrapper d-flex gap-3">
           <div className="creator__img">
-            <img src={creatorImg} alt="" className="w-100" />
+            <img src={creatorImg} alt="" className="w-100"/>
           </div>
 
           <div className="creator__info w-100 d-flex align-items-center justify-content-between">
