@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react'
+import { ColorModeScript } from "@chakra-ui/color-mode";
+import theme from "./app/theme";
+
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -22,9 +27,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <ApolloProvider client = {client}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
   </ApolloProvider>
   
 );
