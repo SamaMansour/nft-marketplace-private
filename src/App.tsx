@@ -5,6 +5,8 @@ import Header from './app/components/Header/Header';
 import Footer from './app/components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
+import '@coreui/coreui/dist/css/coreui.min.css'
+
 
 import Layout from "./app/components/Layout/Layout";
 
